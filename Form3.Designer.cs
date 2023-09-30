@@ -43,34 +43,40 @@ namespace REMISYA
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.NOMBRE,
             this.TOTAL});
-            this.dataGridView1.Location = new System.Drawing.Point(26, 22);
+            this.dataGridView1.Location = new System.Drawing.Point(13, 13);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(444, 307);
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.Size = new System.Drawing.Size(503, 378);
             this.dataGridView1.TabIndex = 0;
             // 
             // NOMBRE
             // 
             this.NOMBRE.HeaderText = "NOMBRE";
+            this.NOMBRE.MinimumWidth = 6;
             this.NOMBRE.Name = "NOMBRE";
             this.NOMBRE.ReadOnly = true;
-            this.NOMBRE.Width = 200;
+            this.NOMBRE.Width = 250;
             // 
             // TOTAL
             // 
             this.TOTAL.HeaderText = "TOTAL RECAUDADO";
+            this.TOTAL.MinimumWidth = 6;
             this.TOTAL.Name = "TOTAL";
             this.TOTAL.ReadOnly = true;
             this.TOTAL.Width = 200;
             // 
             // Form3
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(488, 354);
+            this.ClientSize = new System.Drawing.Size(532, 411);
             this.Controls.Add(this.dataGridView1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form3";
             this.Text = "Form3";
+            this.Load += new System.EventHandler(this.Form3_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 

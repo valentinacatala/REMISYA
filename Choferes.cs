@@ -28,7 +28,7 @@ namespace REMISYA
             adaptador.Fill(tabla);
 
             DataColumn[] vec = new DataColumn[1];
-            vec[0] = tabla.Columns["Chofer"];
+            vec[0] = tabla.Columns["chofer"];
             tabla.PrimaryKey = vec;
         }
         public DataTable getChoferes()

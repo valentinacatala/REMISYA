@@ -40,18 +40,20 @@ namespace REMISYA
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(23, 42);
+            this.label1.Location = new System.Drawing.Point(31, 52);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(169, 13);
+            this.label1.Size = new System.Drawing.Size(208, 16);
             this.label1.TabIndex = 0;
             this.label1.Text = "FECHA DEL VIAJE SIN REPETIR";
             // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(26, 73);
+            this.comboBox1.Location = new System.Drawing.Point(35, 90);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(313, 21);
+            this.comboBox1.Size = new System.Drawing.Size(416, 24);
             this.comboBox1.TabIndex = 1;
             // 
             // dataGridView1
@@ -62,15 +64,18 @@ namespace REMISYA
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.CHOFER,
             this.IMPORTE});
-            this.dataGridView1.Location = new System.Drawing.Point(15, 111);
+            this.dataGridView1.Location = new System.Drawing.Point(20, 137);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(393, 150);
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.Size = new System.Drawing.Size(524, 185);
             this.dataGridView1.TabIndex = 2;
             // 
             // CHOFER
             // 
             this.CHOFER.HeaderText = "NOMBRE DEL CHOFER";
+            this.CHOFER.MinimumWidth = 6;
             this.CHOFER.Name = "CHOFER";
             this.CHOFER.ReadOnly = true;
             this.CHOFER.Width = 200;
@@ -78,20 +83,23 @@ namespace REMISYA
             // IMPORTE
             // 
             this.IMPORTE.HeaderText = "IMPORTE TOTAL";
+            this.IMPORTE.MinimumWidth = 6;
             this.IMPORTE.Name = "IMPORTE";
             this.IMPORTE.ReadOnly = true;
             this.IMPORTE.Width = 150;
             // 
             // Form9
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(428, 284);
+            this.ClientSize = new System.Drawing.Size(571, 350);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form9";
             this.Text = "Form9";
+            this.Load += new System.EventHandler(this.Form9_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

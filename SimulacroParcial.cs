@@ -52,11 +52,7 @@ namespace REMISYA
         {
             dataGridView1.Rows.Clear();
 
-            foreach (DataRow datos in dtViaje.Rows)
-            {
-                
-                
-            }
+            
         }
     }
 }

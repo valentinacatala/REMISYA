@@ -5,6 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace REMISYA
 {
@@ -42,6 +43,91 @@ namespace REMISYA
             DataRow fila = tabla.Rows.Find(numeroBarrio);
             return fila["nombre"].ToString();
 
+        }
+
+        public int[] devolverBarrio() //form6 
+        {
+            //guardar los barrios q se lean en un vector int
+            int[] barrios = new int[11];
+            int i = 0;
+            foreach (DataRow fila in tabla.Rows)
+            {
+                barrios[i] = int.Parse(fila["barrio"].ToString());
+                i++;
+            }
+            return barrios;
+        }
+
+        public void grabar (int barrio,string nombre) 
+        {
+            //bool ok;
+
+            //try
+            //{
+            //    DataRow filaBuscada = tabla.Rows.Find(barrio);
+
+            //    if (filaBuscada==null)
+            //    {
+            //        foreach (DataRow fbar in tabla.Rows)
+            //        {
+            //            if (fbar["nombre"].ToString()==nombre)
+            //            {
+            //                ok = false;
+            //            }
+            //        }
+
+            //        if (ok=true)
+            //        {
+            //            DataRow fila = tabla.NewRow();
+            //            fila["barrio"] = barrio;
+            //            fila["nombre"] = nombre;
+            //            tabla.Rows.Add(fila);
+
+            //            OleDbCommandBuilder cb = new OleDbCommandBuilder(adaptador);
+            //            adaptador.Update(tabla);
+            //        }
+
+            //    }
+            //    else
+            //    {
+            //        ok=false;
+            //    }
+
+            //    return ok;
+            //}
+            //catch (Exception ex)
+            //{
+
+            //    MessageBox.Show("ERROR");
+            //}
+
+            try
+            {
+                foreach (DataRow datos in tabla.Rows)
+                {
+                    try
+                    {
+                        if (barrio != int.Parse(datos["barrio"].ToString()) && nombre != datos["nombre"].ToString())
+                        {
+                            tabla.Rows.Add(barrio, nombre);
+                        }
+                    }
+                    catch (Exception)
+                    {
+                        MessageBox.Show("Numero de barrio existente");
+                        break;
+                        
+                    }
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Nombre exitente");
+                
+            }
+
+            OleDbCommandBuilder cb = new OleDbCommandBuilder(adaptador);
+            adaptador.Update(tabla);
         }
     }
 }

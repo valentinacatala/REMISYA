@@ -29,7 +29,18 @@ namespace REMISYA
 
         private void btnConsultar_Click(object sender, EventArgs e)
         {
+            //"cantViajes" se encuentra en la clase viajes
+            if (radioButton1.Checked)
+            {
+                string opcion = "desdebarrio";
+                oViaje.cantViajes(dataGridView1, opcion);
 
+            }
+            else
+            {
+                string opcion = "hastabarrio";
+                oViaje.cantViajes(dataGridView1, opcion);
+            }
         }
     }
 }

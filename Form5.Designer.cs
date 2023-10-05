@@ -43,19 +43,23 @@ namespace REMISYA
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(29, 19);
+            this.label1.Location = new System.Drawing.Point(39, 23);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(121, 13);
+            this.label1.Size = new System.Drawing.Size(150, 16);
             this.label1.TabIndex = 0;
             this.label1.Text = "SELECCIONE CHOFER";
             // 
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(12, 49);
+            this.listBox1.ItemHeight = 16;
+            this.listBox1.Location = new System.Drawing.Point(16, 60);
+            this.listBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(178, 277);
+            this.listBox1.Size = new System.Drawing.Size(236, 340);
             this.listBox1.TabIndex = 1;
+            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // dataGridView1
             // 
@@ -68,57 +72,63 @@ namespace REMISYA
             this.HASTA,
             this.KM,
             this.IMPORTE});
-            this.dataGridView1.Location = new System.Drawing.Point(207, 49);
+            this.dataGridView1.Location = new System.Drawing.Point(276, 60);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(517, 277);
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.Size = new System.Drawing.Size(630, 341);
             this.dataGridView1.TabIndex = 2;
             // 
             // fecha
             // 
             this.fecha.HeaderText = "FECHA";
+            this.fecha.MinimumWidth = 6;
             this.fecha.Name = "fecha";
             this.fecha.ReadOnly = true;
-            this.fecha.Width = 80;
             // 
             // DESDE
             // 
             this.DESDE.HeaderText = "BARRIO DESDE";
+            this.DESDE.MinimumWidth = 6;
             this.DESDE.Name = "DESDE";
             this.DESDE.ReadOnly = true;
-            this.DESDE.Width = 120;
+            this.DESDE.Width = 140;
             // 
             // HASTA
             // 
             this.HASTA.HeaderText = "BARRIO HASTA";
+            this.HASTA.MinimumWidth = 6;
             this.HASTA.Name = "HASTA";
             this.HASTA.ReadOnly = true;
-            this.HASTA.Width = 120;
+            this.HASTA.Width = 140;
             // 
             // KM
             // 
             this.KM.HeaderText = "KM";
+            this.KM.MinimumWidth = 6;
             this.KM.Name = "KM";
             this.KM.ReadOnly = true;
-            this.KM.Width = 80;
             // 
             // IMPORTE
             // 
             this.IMPORTE.HeaderText = "IMPORTE";
+            this.IMPORTE.MinimumWidth = 6;
             this.IMPORTE.Name = "IMPORTE";
             this.IMPORTE.ReadOnly = true;
-            this.IMPORTE.Width = 80;
             // 
             // Form5
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(736, 352);
+            this.ClientSize = new System.Drawing.Size(923, 422);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form5";
             this.Text = "Form5";
+            this.Load += new System.EventHandler(this.Form5_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

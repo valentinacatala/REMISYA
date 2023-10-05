@@ -12,9 +12,24 @@ namespace REMISYA
 {
     public partial class Form6 : Form
     {
+        Viajes oViaje;
+        Barrio oBarrio;
+        DataTable tabla;
         public Form6()
         {
             InitializeComponent();
+        }
+
+        private void Form6_Load(object sender, EventArgs e)
+        {
+            oViaje = new Viajes();
+            oBarrio = new Barrio();
+            tabla = oViaje.GetData();
+        }
+
+        private void btnConsultar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

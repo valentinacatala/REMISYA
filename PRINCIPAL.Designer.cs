@@ -41,17 +41,19 @@ namespace REMISYA
             this.eJEMPLO8ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eJEMPLO9ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eJEMPLO10ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sIMULACROToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
+            this.menuStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Visible;
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tAREASToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(148, 33);
+            this.menuStrip1.Size = new System.Drawing.Size(236, 33);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -67,7 +69,8 @@ namespace REMISYA
             this.eJEMPLO7ToolStripMenuItem,
             this.eJEMPLO8ToolStripMenuItem,
             this.eJEMPLO9ToolStripMenuItem,
-            this.eJEMPLO10ToolStripMenuItem});
+            this.eJEMPLO10ToolStripMenuItem,
+            this.sIMULACROToolStripMenuItem});
             this.tAREASToolStripMenuItem.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tAREASToolStripMenuItem.ForeColor = System.Drawing.Color.SteelBlue;
             this.tAREASToolStripMenuItem.Name = "tAREASToolStripMenuItem";
@@ -76,6 +79,7 @@ namespace REMISYA
             // 
             // eJEMPLO1ToolStripMenuItem
             // 
+            this.eJEMPLO1ToolStripMenuItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.eJEMPLO1ToolStripMenuItem.Font = new System.Drawing.Font("Impact", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.eJEMPLO1ToolStripMenuItem.Name = "eJEMPLO1ToolStripMenuItem";
             this.eJEMPLO1ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
@@ -84,6 +88,7 @@ namespace REMISYA
             // 
             // eJEMPLO2ToolStripMenuItem
             // 
+            this.eJEMPLO2ToolStripMenuItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.eJEMPLO2ToolStripMenuItem.Font = new System.Drawing.Font("Impact", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.eJEMPLO2ToolStripMenuItem.Name = "eJEMPLO2ToolStripMenuItem";
             this.eJEMPLO2ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
@@ -92,6 +97,7 @@ namespace REMISYA
             // 
             // eJEMPLO3ToolStripMenuItem
             // 
+            this.eJEMPLO3ToolStripMenuItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.eJEMPLO3ToolStripMenuItem.Font = new System.Drawing.Font("Impact", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.eJEMPLO3ToolStripMenuItem.Name = "eJEMPLO3ToolStripMenuItem";
             this.eJEMPLO3ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
@@ -100,6 +106,7 @@ namespace REMISYA
             // 
             // eJEMPLO4ToolStripMenuItem
             // 
+            this.eJEMPLO4ToolStripMenuItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.eJEMPLO4ToolStripMenuItem.Font = new System.Drawing.Font("Impact", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.eJEMPLO4ToolStripMenuItem.Name = "eJEMPLO4ToolStripMenuItem";
             this.eJEMPLO4ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
@@ -108,6 +115,7 @@ namespace REMISYA
             // 
             // eJEMPLO5ToolStripMenuItem
             // 
+            this.eJEMPLO5ToolStripMenuItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.eJEMPLO5ToolStripMenuItem.Font = new System.Drawing.Font("Impact", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.eJEMPLO5ToolStripMenuItem.Name = "eJEMPLO5ToolStripMenuItem";
             this.eJEMPLO5ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
@@ -116,6 +124,7 @@ namespace REMISYA
             // 
             // eJEMPLO6ToolStripMenuItem
             // 
+            this.eJEMPLO6ToolStripMenuItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.eJEMPLO6ToolStripMenuItem.Font = new System.Drawing.Font("Impact", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.eJEMPLO6ToolStripMenuItem.Name = "eJEMPLO6ToolStripMenuItem";
             this.eJEMPLO6ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
@@ -124,6 +133,7 @@ namespace REMISYA
             // 
             // eJEMPLO7ToolStripMenuItem
             // 
+            this.eJEMPLO7ToolStripMenuItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.eJEMPLO7ToolStripMenuItem.Font = new System.Drawing.Font("Impact", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.eJEMPLO7ToolStripMenuItem.Name = "eJEMPLO7ToolStripMenuItem";
             this.eJEMPLO7ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
@@ -132,6 +142,7 @@ namespace REMISYA
             // 
             // eJEMPLO8ToolStripMenuItem
             // 
+            this.eJEMPLO8ToolStripMenuItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.eJEMPLO8ToolStripMenuItem.Font = new System.Drawing.Font("Impact", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.eJEMPLO8ToolStripMenuItem.Name = "eJEMPLO8ToolStripMenuItem";
             this.eJEMPLO8ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
@@ -140,6 +151,7 @@ namespace REMISYA
             // 
             // eJEMPLO9ToolStripMenuItem
             // 
+            this.eJEMPLO9ToolStripMenuItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.eJEMPLO9ToolStripMenuItem.Font = new System.Drawing.Font("Impact", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.eJEMPLO9ToolStripMenuItem.Name = "eJEMPLO9ToolStripMenuItem";
             this.eJEMPLO9ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
@@ -148,17 +160,26 @@ namespace REMISYA
             // 
             // eJEMPLO10ToolStripMenuItem
             // 
+            this.eJEMPLO10ToolStripMenuItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.eJEMPLO10ToolStripMenuItem.Font = new System.Drawing.Font("Impact", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.eJEMPLO10ToolStripMenuItem.Name = "eJEMPLO10ToolStripMenuItem";
             this.eJEMPLO10ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.eJEMPLO10ToolStripMenuItem.Text = "EJEMPLO 10";
             this.eJEMPLO10ToolStripMenuItem.Click += new System.EventHandler(this.eJEMPLO10ToolStripMenuItem_Click);
             // 
+            // sIMULACROToolStripMenuItem
+            // 
+            this.sIMULACROToolStripMenuItem.Font = new System.Drawing.Font("Impact", 9F);
+            this.sIMULACROToolStripMenuItem.Name = "sIMULACROToolStripMenuItem";
+            this.sIMULACROToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.sIMULACROToolStripMenuItem.Text = "SIMULACRO";
+            this.sIMULACROToolStripMenuItem.Click += new System.EventHandler(this.sIMULACROToolStripMenuItem_Click);
+            // 
             // PRINCIPAL
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(148, 47);
+            this.ClientSize = new System.Drawing.Size(236, 325);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -188,5 +209,6 @@ namespace REMISYA
         private System.Windows.Forms.ToolStripMenuItem eJEMPLO8ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eJEMPLO9ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eJEMPLO10ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sIMULACROToolStripMenuItem;
     }
 }

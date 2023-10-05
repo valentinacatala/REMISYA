@@ -98,5 +98,11 @@ namespace REMISYA
         {
             
         }
+
+        private void sIMULACROToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SimulacroParcial sp = new SimulacroParcial();
+            sp.ShowDialog();
+        }
     }
 }
